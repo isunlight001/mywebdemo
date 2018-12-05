@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Device Example</title>
+<script type="text/javascript">
+// H5 plus事件处理
+function plusReady(){
+alert( "IMSI: " + plus.device.imsi );
+}
+if(window.plus){
+plusReady();
+}else{
+document.addEventListener("plusready",plusReady,false);
+}
+</script>
+</head>
+<body>
+获取设备的国际移动用户识别码
+</body>
+</html>

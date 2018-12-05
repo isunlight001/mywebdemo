@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Device Example</title>
+<script type="text/javascript">
+// H5 plus事件处理
+function plusReady(){
+// 开启一直保持程序唤醒状态
+plus.device.setWakelock( true );
+}
+if(window.plus){
+plusReady();
+}else{
+document.addEventListener("plusready",plusReady,false);
+}
+</script>
+</head>
+<body>
+设置应用保持唤醒（屏幕常亮）状态<br/>
+<button onclick="plus.device.setWakelock(false)">UnWakelock</button>
+</body>
+</html>

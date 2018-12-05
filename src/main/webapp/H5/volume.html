@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Device Example</title>
+<script type="text/javascript">
+// H5 plus事件处理
+function plusReady(){
+// 设置音量
+plus.device.setVolume( 0.5 );
+}
+if(window.plus){
+plusReady();
+}else{
+document.addEventListener("plusready",plusReady,false);
+}
+</script>
+</head>
+<body>
+设备的系统音量值<br/>
+</body>
+</html>

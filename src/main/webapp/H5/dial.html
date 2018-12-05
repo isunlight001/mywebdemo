@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Device Example</title>
+<script type="text/javascript">
+// H5 plus事件处理
+function plusReady(){
+}
+if(window.plus){
+plusReady();
+}else{
+document.addEventListener("plusready",plusReady,false);
+}
+function dialTest() {
+plus.device.dial( "10086", false );
+}
+</script>
+</head>
+<body>
+拨打电话<br/>
+<button onclick="dialTest()">Dial</button>
+</body>
+</html> 

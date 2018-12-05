@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd" 
+			default-autowire="autodetect">
+	 <aop:config>  
+        <aop:aspect id="aspect" ref="aspectBean">  
+            <!--配置com.sunlight001.spring.service包下所有类或接口的所有方法-->  
+            <aop:pointcut id="logService"  
+                expression="execution(* com.sunlight001.spring.service.*.*(..))" />  
+            <aop:before pointcut-ref="logService" method="doBefore"/>  
+            <aop:after  pointcut-ref="logService" method="doAfter"/>  
+            <aop:around pointcut-ref="logService" method="doAround"/>  
+        </aop:aspect>  
+    </aop:config>  
+     <bean id="aspectBean" class="com.sunlight001.spring.aop.Aspect" />
+     <bean id="oService"   class="com.sunlight001.spring.service.OServiceImpl"  />    
+     <bean id="aService"   class="com.sunlight001.spring.service.AServiceImpl"  parent="oService" />  
+     <bean id="bService"   class="com.sunlight001.spring.service.BServiceImpl"  parent="oService" />  
+    
+</beans>

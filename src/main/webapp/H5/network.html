@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Device Example</title>
+<script type="text/javascript">
+// H5 plus事件处理
+function plusReady(){
+var types = {};
+types[plus.networkinfo.CONNECTION_UNKNOW] = "Unknown connection";
+types[plus.networkinfo.CONNECTION_NONE] = "None connection";
+types[plus.networkinfo.CONNECTION_ETHERNET] = "Ethernet connection";
+types[plus.networkinfo.CONNECTION_WIFI] = "WiFi connection";
+types[plus.networkinfo.CONNECTION_CELL2G] = "Cellular 2G connection";
+types[plus.networkinfo.CONNECTION_CELL3G] = "Cellular 3G connection";
+types[plus.networkinfo.CONNECTION_CELL4G] = "Cellular 4G connection";
+alert( "Network: " + types[plus.networkinfo.getCurrentType()] );
+}
+if(window.plus){
+plusReady();
+}else{
+document.addEventListener("plusready",plusReady,false);
+}
+</script>
+</head>
+<body>
+获取设备当前连接的网络类型<br/>
+</body>
+</html>
