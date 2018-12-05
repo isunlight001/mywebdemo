@@ -10,7 +10,6 @@ import javax.websocket.server.ServerEndpoint;
 /**
  * 原生的webscoket 测试 可以进行双向通信
  * @author sunlight001
- *
  */
 @ServerEndpoint("/websocket")
 public class WebSocketTest {
