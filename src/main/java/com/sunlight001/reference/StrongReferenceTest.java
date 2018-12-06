@@ -2,7 +2,6 @@ package com.sunlight001.reference;
 /**
  * StrongReference是Java的默认引用形式，使用时不需要显示定义。任何通过强引用所使用的对象不管系统资源有多紧张，Java GC都不会主动回收具有强引用的对象。
  * @author sunlight001
- *
  */
 public class StrongReferenceTest {
 	public static int M = 1024*1024;

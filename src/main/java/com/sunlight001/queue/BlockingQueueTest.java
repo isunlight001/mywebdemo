@@ -5,11 +5,10 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
-
 /**
  * 公共常量
- * @author 骆昊
- *
+ * @author sunlight001
+ * 2018年12月5日
  */
 class Constants {
     public static final int MAX_BUFFER_SIZE = 10;
@@ -20,7 +19,6 @@ class Constants {
 /**
  * 工作任务
  * @author 骆昊
- *
  */
 class Task {
     private String id;  // 任务的编号
@@ -90,7 +88,6 @@ class Producer implements Runnable {
 
 /**
  * @author sunlight001
- *
  */
 public class BlockingQueueTest {
 
