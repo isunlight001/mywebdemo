@@ -9,7 +9,6 @@ import java.util.concurrent.Executors;
 /**
  * 公共常量
  * @author 骆昊
- *
  */
 class Constants {
     public static final int MAX_BUFFER_SIZE = 10;
