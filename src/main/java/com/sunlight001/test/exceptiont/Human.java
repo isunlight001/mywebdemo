@@ -1,23 +1,26 @@
 package com.sunlight001.test.exceptiont;
-
-class Annoyance extends Exception {}
-class Sneeze extends Annoyance {}
+/**
+ * 异常可以混合捕捉吗？
+ * @author sunlight001
+ * 2018年12月19日
+ */
+class AnnoyanceException extends Exception {}
+class SneezeException extends AnnoyanceException {}
 
 class Human {
 
-    public static void main(String[] args) 
-        throws Exception {
+    public static void main(String[] args) throws Exception {
         try {
             try {
-                throw new Sneeze();
+                throw new SneezeException();
             } 
-            catch ( Annoyance a ) {
-                System.out.println("Caught Annoyance");
+            catch ( AnnoyanceException a ) {
+                System.out.println("Caught AnnoyanceException");
                 throw a;
             }
         } 
-        catch ( Sneeze s ) {
-            System.out.println("Caught Sneeze");
+        catch ( SneezeException s ) {
+            System.out.println("!!!!!!!!Caught SneezeException");
             return ;
         }
         finally {

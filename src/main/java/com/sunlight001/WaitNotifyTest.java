@@ -5,10 +5,10 @@ import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
 /**
  * 公共常量
- * @author 骆昊
+ * @author sunlight001
+ * 2018年12月19日
  */
 class Constants {
     public static final int MAX_BUFFER_SIZE = 10;
@@ -98,6 +98,54 @@ class Producer implements Runnable {
 
 }
 
+/**
+ * @author sunlight001
+ * 2018年12月19日
+ */
+/**
+ * @author sunlight001
+ * 2018年12月19日
+ */
+/**
+ * @author sunlight001
+ * 2018年12月19日
+ */
+/**
+ * @author sunlight001
+ * 2018年12月19日
+ */
+/**
+ * @author sunlight001
+ * 2018年12月19日
+ */
+/**
+ * @author sunlight001
+ * 2018年12月19日
+ */
+/**
+ * @author sunlight001
+ * 2018年12月19日
+ */
+/**
+ * @author sunlight001
+ * 2018年12月19日
+ */
+/**
+ * @author sunlight001
+ * 2018年12月19日
+ */
+/**
+ * @author sunlight001
+ * 2018年12月19日
+ */
+/**
+ * @author sunlight001
+ * 2018年12月19日
+ */
+/**
+ * @author sunlight001
+ * 2018年12月19日
+ */
 public class WaitNotifyTest {
 
     public static void main(String[] args) {

@@ -1,11 +1,10 @@
 package com.sunlight001;
 
 import java.util.concurrent.Semaphore;
-
 /**
  * 存放线程共享信号量的上下问
- * @author 骆昊
- *
+ * @author sunlight001
+ * 2018年12月19日
  */
 class AppContext {
     public static final int NUM_OF_FORKS = 5;   // 叉子数量(资源)

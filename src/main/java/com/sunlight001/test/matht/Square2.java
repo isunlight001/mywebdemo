@@ -1,4 +1,4 @@
-package com.sunlight001;
+package com.sunlight001.test.matht;
 /**
  * 求根号2的值
  * @author sunlight001
