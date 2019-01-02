@@ -3,6 +3,7 @@ package com.sunlight001.test.threadt;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 /**
+ * 控制线程并发顺序. 
  * 可以通过thread的join方法和 Executor的newFixedThreadPool来实现
  * @author sunlight001
  * 2019年1月2日
