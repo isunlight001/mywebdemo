@@ -41,7 +41,7 @@ public class SwapInteger {
 		field.setAccessible(true);
 		Integer tmp = new Integer(a.intValue());
 		field.set(a, b.intValue());
-		field.set(b, tmp);;
+		field.set(b, tmp);
 	}
 
 }

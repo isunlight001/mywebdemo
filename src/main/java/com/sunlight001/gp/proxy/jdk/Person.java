@@ -1,0 +1,12 @@
+package com.sunlight001.gp.proxy.jdk;
+
+public interface Person {
+
+	//—∞’“’Ê∞Æ°¢œ‡«◊
+	void findLove();
+	
+//	String getSex();
+//
+//	String getName();
+
+}

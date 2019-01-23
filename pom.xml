@@ -13,6 +13,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<aspect-version>1.8.0</aspect-version>
+		<spring.version>4.3.12.RELEASE</spring.version>
 	</properties>
 
 	<build>
@@ -52,10 +53,16 @@
 		   <artifactId>ojdbc14</artifactId>
 		   <version>10.2.0.4.0</version>
 		</dependency> -->
+		 <!-- springMVC -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
 		<dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>4.3.5.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
 		<dependency>
 		    <groupId>log4j</groupId>
@@ -77,5 +84,21 @@
 		  <artifactId>httpclient</artifactId>
 		  <version>4.5.6</version>
 		</dependency>
+		
+		<!-- cglib and asm -->
+		<dependency>
+		    <groupId>cglib</groupId>
+		    <artifactId>cglib</artifactId>
+		    <version>2.2.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/asm/asm -->
+		<dependency>
+		    <groupId>asm</groupId>
+		    <artifactId>asm</artifactId>
+		    <version>3.3.1</version>
+		</dependency>
+
+		
+				
 		</dependencies>
 </project>
